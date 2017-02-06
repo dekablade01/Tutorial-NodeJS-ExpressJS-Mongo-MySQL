@@ -435,7 +435,7 @@ function ErrorHandler(error, req, res, next) {
 
 การใช้ MongoDB ผ่าน Node.js ก่อนจะใช้งานต้องติดตั้ง module ด้วย npm install mongodb ก่อน
 
-```
+```javascript
 "use strict";
 let mongo = require('mongodb').MongoClient;
 let connection = 'mongodb://localhost:27017/bookshop';
@@ -451,7 +451,7 @@ mongo.connect(connection, (error, database) => {
 
 ## MySQL
 การใช้ MySQL ต้องใช้ module ชื่อ mysql จากนั้นใช้ pool ในการเชื่อมต่อ เช่น
-```
+```javascript
 let mysql = require('mysql');
 let connection = {
 	host:'127.0.0.1',
